@@ -4,6 +4,6 @@ At Colgate’s Foggy Bottom observatory, astronomers use finder images to locate
 # Replication Instructions
 - Begin by ensuring python 3 and conda are properly installed on your computer, then create a new envirnment for the project
 - activate that environment and run the following command
-''''
+```
 conda install -c conda-forge astropy astroquery matplotlib pillow tensorflow pandas numpy seaborn -y
-''''
+```
