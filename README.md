@@ -11,4 +11,4 @@ conda install -c conda-forge astropy astroquery matplotlib pillow tensorflow pan
 - open up `data_generation.ipynb` in jupyter notebook and run each cell in order
 - after the Kernel finishes open `data_processing.ipynb` in jupyter notebook and run each cell in order picking only one model at a time
 note that you should either run Model 1, Model 2, or Model 3. **running all 3 of these cells will not achieve the desired results**
--this pipline allows for easy addition of other models and easy expansion of the dataset
+- this pipline allows for easy addition of other models and easy expansion of the dataset
