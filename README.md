@@ -18,9 +18,9 @@ There are many ways to improve the work presented in this project. On my compute
 
 # Contributions
 - Research and preperation: 2 hours
-- Data Generation Pipeline: 4 hours
+- Data Generation Pipeline: 5 hours
 - Initial Model Fitting: 4 hours
-- Trying Other Models: 3 hours
+- Trying Other Models: 5 hours
 
-Total: 13 hours
+Total: 16 hours
 
