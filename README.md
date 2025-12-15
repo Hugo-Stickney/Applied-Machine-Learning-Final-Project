@@ -1,9 +1,9 @@
-# Milestone 1
-In the notebook below I have created a pipeline for generating artificial data to be used in training for Telescope image finding on finder images. Thus far I have better learned how to use os, how to write to JSON files, and image processing using pillow.
+# Overview
+At Colgate’s Foggy Bottom observatory, astronomers use finder images to locate astronomical objects and properly orient the telescope. This process is currently done by hand so it can sometimes take a long time to locate which area of the finder image the telescope points at. Automating this process using machine learning will speed up the observing process at Foggy Bottom. Through this project I hoped to find an artifical data generation pipeline which can be used to train a model to locate a telescope image in a larger telescope image. I believe I have a mostly succesful data generation pipeline. However, there are severe  limitations in representing the data as one image for a CNN In order for the machine to properly place a bounding box on the telescope location.
 
-The pipeline works as follows:
-- using RA and Dec coordinates to retrieve 60'x 60' finder images SkyView 
-- put any generated images in the *finder_images* folder
-- create the telescope image by croping the finder image, fliping the image horizontally, increasing contrast, adding gaussian noise
-- add each of these images to the *telescope_images* folder
-- write the path of the finder image, telescope image, and area of the crop to a JSON file 
+# Replication Instructions
+- Begin by ensuring python 3 and conda are properly installed on your computer, then create a new envirnment for the project
+- activate that environment and run the following command
+''''
+conda install -c conda-forge astropy astroquery matplotlib pillow tensorflow pandas numpy seaborn -y
+''''
