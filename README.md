@@ -10,5 +10,17 @@ conda install -c conda-forge astropy astroquery matplotlib pillow tensorflow pan
 - create a new folder on your computer and download both attached .ipynb files into the folder
 - open up `data_generation.ipynb` in jupyter notebook and run each cell in order
 - after the Kernel finishes open `data_processing.ipynb` in jupyter notebook and run each cell in order picking only one model at a time
-note that you should either run Model 1, Model 2, or Model 3. **running all 3 of these cells will not achieve the desired results**
+- note that you should either run Model 1, Model 2, or Model 3. **running all 3 of these cells will not achieve the desired results**
 - this pipline allows for easy addition of other models and easy expansion of the dataset
+
+# Future Directions
+There are many ways to improve the work presented in this project. On my computer I had very limited space for a generated dataset so it might be interesting to expand the dataset to from 1,000 images to test if models fail on a larger dataset. The code could also very easily chnage to move from single-image representation to multi-input representation and changing models accordingly. I suspect the task fails due to a loss of fine detail in the images. This presents an issue in images of stars where very fine detail is important so if downsampling could be reduced to better handle small astronomical features models might perform better. I also thing the data generation for the telecope images could be more physically accurate to behaviors of actual telescope imaging. This could be done with physically based noise replacing the gaussian noise and more research being done into a physical basis for darkening the image.
+
+# Contributions
+- Research and preperation: 2 hours
+- Data Generation Pipeline: 4 hours
+- Initial Model Fitting: 4 hours
+- Trying Other Models: 3 hours
+
+Total: 13 hours
+
